@@ -2,7 +2,7 @@
 
 Sky Dodger es un emocionante juego de aviación 3D donde pilotas un avión a través de un cielo lleno de obstáculos.
 
-Características Principales
+## Características Principales
 ✈️ Control intuitivo de un avión 3D
 
 🪙 Sistema de recolección de monedas
@@ -13,8 +13,8 @@ Características Principales
 
 🔥 Efectos visuales impactantes
 
-Cómo Jugar
-Controles
+## Cómo Jugar
+### Controles
 W/↑: Ascender
 
 S/↓: Descender
@@ -31,7 +31,7 @@ Enter: Cambiar vista de cámara
 
 R: Reiniciar después de perder
 
-*Mecánicas del Juego
+## Mecánicas del Juego
 Controla tu avión para evitar colisionar
 
 Recolecta monedas para aumentar tu puntuación
@@ -40,24 +40,24 @@ Sobrevive el mayor tiempo posible
 
 Cada nivel aumenta la dificultad con más obstáculos
 
-Objetivo
+## Objetivo
 Alcanza la mayor distancia posible
 
 Recolecta el máximo de monedas
 
 Supera tus propios récords
 
-Requisitos Técnicos
+## Requisitos Técnicos
 Navegador web moderno (Chrome, Firefox, Edge)
 
 Conexión a Internet (para cargar recursos)
 
 Teclado para jugar
 
-Instalación y Ejecución
+### Instalación y Ejecución
 No se requiere instalación. Simplemente abre el juego en tu navegador
 
-Tecnologías Utilizadas
+### Tecnologías Utilizadas
 Three.js: Renderizado 3D
 
 JavaScript: Lógica del juego
