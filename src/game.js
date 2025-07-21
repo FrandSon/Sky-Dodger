@@ -1,4 +1,3 @@
-import * as THREE from 'three';
 function createAirplaneMesh() {
   const mesh = new THREE.Object3D()
 
@@ -1666,12 +1665,12 @@ class UI {
     this._elemsLifes = document.querySelectorAll('#lifes imgs')
     this._elemCoinsCount = document.getElementById('coinsValue')
 
-// Auto-start logic
+    // Auto-start logic
     const introScreen = document.getElementById('intro-screen');
     if (introScreen) {
       // Immediately hide intro screen
       introScreen.classList.remove('visible');
-      
+
       // Optional: Add slight delay for smooth transition
       setTimeout(() => {
         onStart();
@@ -1744,17 +1743,17 @@ class UI {
   // }
 
   handleKeyDown(event) {
- // Check if intro is visible
-  const introScreen = document.getElementById('intro-screen');
-  if (introScreen && introScreen.classList.contains('visible')) {
-    if (event.code === 'Space') {
-      // Space handled in global listener - skip further processing
-      event.preventDefault();
+    // Check if intro is visible
+    const introScreen = document.getElementById('intro-screen');
+    if (introScreen && introScreen.classList.contains('visible')) {
+      if (event.code === 'Space') {
+        // Space handled in global listener - skip further processing
+        event.preventDefault();
+        return;
+      }
+      // Block other keys during intro
       return;
     }
-    // Block other keys during intro
-    return;
-  }
     // Update keyboard state for movement keys
     if (this.keyboardState.hasOwnProperty(event.code)) {
       this.keyboardState[event.code] = true;
