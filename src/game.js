@@ -1665,19 +1665,9 @@ class UI {
     this._elemsLifes = document.querySelectorAll('#lifes imgs')
     this._elemCoinsCount = document.getElementById('coinsValue')
 
-    // Auto-start logic
-    const introScreen = document.getElementById('intro-screen');
-    if (introScreen) {
-      // Immediately hide intro screen
-      introScreen.classList.remove('visible');
-
-      // Optional: Add slight delay for smooth transition
-      setTimeout(() => {
-        onStart();
-      }, 100); // 100ms delay allows CSS transition to complete
-    } else {
-      // Start immediately if no intro screen
-      onStart();
+    document.querySelector('#intro-screen button').onclick = () => {
+      document.getElementById('intro-screen').classList.remove('visible')
+      onStart()
     }
 
     document.addEventListener('keydown', this.handleKeyDown.bind(this), false)
@@ -1948,8 +1938,8 @@ function createWorld() {
     planeMinSpeed: 1.2,
     planeMaxSpeed: 1.6,
 
-    seaRadius: 600,
-    seaLength: 800,
+    seaRadius: 1000,
+    seaLength: 1400,
     wavesMinAmp: 5,
     wavesMaxAmp: 20,
     wavesMinSpeed: 0.001,
